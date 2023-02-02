@@ -1,0 +1,196 @@
+/* Author-Bismi John */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+.banner {
+    background-image: url("../images/academy-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-right: 8%;
+    text-align: right;
+}
+.banner-training {
+    width: 85%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+.banner-training {
+    background-color: rgb(255, 255, 255);
+}
+.training {
+    margin-top: 5%;
+}
+.banner-training-text {
+    background-color: rgb(20, 20, 39);
+    color: rgb(20, 238, 242);
+    font-family: serif;
+    line-height: 55px;
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    padding: 3%;
+}
+.banner-training-text h2::before {
+    content: "{";
+    color: rgb(182, 30, 80);
+}
+.banner-training-text h2::after {
+    content: "}";
+    color: rgb(182, 30, 80);
+}
+.courses {
+    background-image: url("../images/modulebg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+.course-wrap {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.courses-row {
+    border: 2px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.course-border {
+    border-radius: 10px;
+    background-color: rgba(9, 8, 8, 0.614);
+    padding: 15px 80px 15px 80px;
+}
+.paragraph {
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+    color: rgb(45, 44, 44);
+    margin-top: 2%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.discussion {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+.discussion-img1 {
+    background-image: url("../images/testsbg.jpg");
+    width: 50%;
+    padding: 50px;
+}
+.discussion-img2 {
+    background-image: url("../images/intrvwbg.jpg");
+    width: 50%;
+    padding: 50px;
+}
+.discussion-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20% 20% 20% 20%;
+    background-color: rgba(0, 0, 0, 0.555);
+    font-size: 20px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+.join {
+    margin-top: 4%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.join-heading {
+    font-size: 25px;
+}
+.join-btn a {
+    border: 2px solid #eb5a06;
+    margin-top: 3%;
+    padding: 1% 3% 1% 3%;
+    display: inline-block;
+    text-decoration: none;
+    color: #eb5a06;
+    font-size: 22px;
+}
+.footer {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    line-height: 25px;
+    margin-top: 8%;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+}
+.footer p {
+    font-size: 18px;
+    color: rgb(45, 44, 44);
+}
+.footer-contact1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 10%;
+}
+.footer-contact2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* mediaquery */
+@media screen and (max-width: 576px) {
+    .banner-training {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner {
+        background-image: none;
+        background-color: rgb(219, 215, 215);
+    }
+    .banner-training-text {
+        font-size: 18px;
+        position: static;
+    }
+    .discussion-img1 {
+        width: 100%;
+        background-size: cover;
+        padding: 20px;
+    }
+    .discussion-img2 {
+        width: 100%;
+        background-size: cover;
+    }
+    .training img {
+        width: 100%;
+    }
+}
